@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./App.css"
-class App extends Component {
-  render() {
+import Add from './components/Add';
+import Post from './components/Post';
+import Who from './components/Who';
+function App (){
+  
     return (
       <div className='blog'>
         
@@ -9,45 +12,19 @@ class App extends Component {
           
         <hr />
         
-        <form>
-            <input type="text" name="title" placeholder='title'/> | {" "}
-            <input type="text" name='description' placeholder='description'/> | {" "}
-            <input type="text" name='author' placeholder='author'/>
-            <button type='submit'>add</button>
-        </form>
+        {/* post add */}
+     
+        <Add/>
 
-        <hr />
-
-        <form>
-            <input type="text" name='whoAuthor' placeholder='Who are you ?'/> {" "}
-            <button type='submit'>submit</button>
-        </form>
+        {/* who*/}
+         <Who/>
 
 
                               {/* ********* posts *********  */}
 
         <div className='posts'>
-              <div className="post">
-                  <h3>I'm the title</h3>
-                  <small>I'm the author</small>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos repellendus provident at.
-                  </p>
-              </div>
-              <div className="post">
-                  <h3>I'm the title</h3>
-                  <small>I'm the author</small>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos repellendus provident at.
-                  </p>
-              </div>
-              <div className="post">
-                  <h3>I'm the title</h3>
-                  <small>I'm the author</small>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos repellendus provident at.
-                  </p>
-              </div>
+            
+             <Post/>
         </div>
 
 
@@ -57,6 +34,6 @@ class App extends Component {
       </div>
     );
   }
-}
+
 
 export default App;
