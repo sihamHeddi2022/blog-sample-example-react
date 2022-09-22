@@ -2,14 +2,13 @@ import React from 'react';
 
 
 function Post(props) {
-  const {title,description,author,id} = props.post
+  const {title,body,id} = props.post
     return ( <div>
     
     <div className="post">
                   <h3>{title}</h3>
-                  <small>{author}</small>
                   <p>
-                   {description}
+                   {body}
                   </p>
                   <button onClick={()=>props.deletePost(id)}>
                     delete

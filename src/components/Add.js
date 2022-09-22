@@ -9,8 +9,7 @@ function Add(props) {
       
       <form onSubmit={(e)=>{ props.add(e);}}>
         <input type="text" name="title" placeholder='title'/> | {" "}
-        <input type="text" name='description' placeholder='description'/> | {" "}
-        <input type="text" name='author' placeholder='author'/>
+        <input type="text" name='body' placeholder='description'/> | {" "}
         <button type='submit'>add</button>
     </form>
 
