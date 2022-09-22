@@ -22,4 +22,8 @@ body {
    border-radius: .5rem;
    margin-bottom:1rem;
    background-color: white;
+   transition: all 500ms;
+}
+.posts .post:hover {
+    box-shadow: none;
 }

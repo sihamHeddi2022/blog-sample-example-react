@@ -1,10 +1,13 @@
 import React from 'react';
 
-function Add() {
+function Add(props) {
+
+  
+
     return (  
       <div>
       
-      <form>
+      <form onSubmit={(e)=>{ props.add(e);}}>
         <input type="text" name="title" placeholder='title'/> | {" "}
         <input type="text" name='description' placeholder='description'/> | {" "}
         <input type="text" name='author' placeholder='author'/>
